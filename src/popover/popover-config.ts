@@ -25,4 +25,7 @@ export class NgbPopoverConfig {
 
   get animation(): boolean { return (this._animation === undefined) ? this._ngbConfig.animation : this._animation; }
   set animation(animation: boolean) { this._animation = animation; }
+
+  focusoutCloseDelay = 10;
+  mouseleaveCloseDelay = 100;
 }
